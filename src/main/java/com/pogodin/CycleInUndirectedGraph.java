@@ -56,17 +56,5 @@ public class CycleInUndirectedGraph {
         return false;
     }
 
-    static class Pair {
-        int parent;
-        int node;
-
-        public Pair(int node, int parent) {
-            this.parent = parent;
-            this.node = node;
-        }
-    }
-
-
-
-
+    record Pair(int node, int parent){}
 }
